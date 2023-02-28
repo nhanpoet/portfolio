@@ -14,7 +14,7 @@ import { fadeIn } from "../variants.js";
 const Banner = () => {
   return (
     <section
-      className="min-h-[85vh] lg:min-h-[78vh] flex items-center"
+      className="min-h-[65vh] lg:min-h-[80vh] flex items-center"
       id="home"
     >
       <div className="container mx-auto">
@@ -26,7 +26,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="text-[55px] lg:text-[84px] font-bold leading-[0.8]"
+              className="text-[48px] lg:text-[84px] font-bold leading-[0.8] mb-3"
             >
               NPOET
             </motion.h1>
@@ -36,7 +36,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-6 text-[36px] lg:text-[48px] font-secondary font-semibold uppercase leading-[1]"
+              className="mb-6 text-[28px] lg:text-[48px] font-secondary font-semibold uppercase leading-[1]"
             >
               <span className="text-white mr-4">I am a</span>
               <TypeAnimation
@@ -54,24 +54,39 @@ const Banner = () => {
                 repeat={Infinity}
               />
             </motion.div>
-            <p className="mb-8 max-w-lg mx-auto lg:mx-0 ">
+            <motion.p
+              variants={fadeIn("up", 0.5)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="mb-4 max-w-lg mx-auto lg:mx-0 "
+            >
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged.
-            </p>
-            <div className="flex max-w-max  gap-x-6 items-center mb-12 mx-auto lg:mx-0">
+              ever since the 1500s.
+            </motion.p>
+            <motion.div
+              variants={fadeIn("up", 0.7)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="flex max-w-max  gap-x-6 items-center mb-6 mx-auto lg:mx-0"
+            >
               <button className="btn btn-lg">Contact me</button>
               <a href="#" className="text-gradient btn-link">
                 My Portfolio
               </a>
-            </div>
+            </motion.div>
 
             {/* socials */}
 
-            <div className="flex  text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0">
+            <motion.div
+              variants={fadeIn("up", 0.7)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="flex  text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
+            >
               <a href="#">
                 <FaGithub />
               </a>
@@ -83,13 +98,13 @@ const Banner = () => {
               <a href="#">
                 <FaInstagram />
               </a>
-            </div>
+            </motion.div>
           </div>
 
           {/* image */}
           <div className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[480px] ">
             <motion.img
-              variants={fadeIn("up", 0.3)}
+              variants={fadeIn("down", 0.5)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
