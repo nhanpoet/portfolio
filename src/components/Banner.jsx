@@ -11,10 +11,12 @@ import { motion } from "framer-motion";
 
 import { fadeIn } from "../variants.js";
 
+import { Link } from "react-scroll";
+
 const Banner = () => {
   return (
     <section
-      className="min-h-[65vh] lg:min-h-[80vh] flex items-center"
+      className="min-h-[65vh] lg:min-h-[70vh] flex items-center"
       id="home"
     >
       <div className="container mx-auto">
@@ -40,14 +42,7 @@ const Banner = () => {
             >
               <span className="text-white mr-4">I am a</span>
               <TypeAnimation
-                sequence={[
-                  "Developer",
-                  2000,
-                  "Designer",
-                  2000,
-                  "Fresher",
-                  2000,
-                ]}
+                sequence={["Developer", 2000, 2000, "Fresher", 2000]}
                 speed={500}
                 className="text-accent"
                 wrapper="span"
@@ -72,7 +67,10 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max  gap-x-6 items-center mb-6 mx-auto lg:mx-0"
             >
-              <button className="btn btn-lg">Contact me</button>
+              <Link to="contact" activeClass="active" smooth={true} spy={true}>
+                <button className="btn btn-lg">Contact me</button>
+              </Link>
+
               <a href="#" className="text-gradient btn-link">
                 My Portfolio
               </a>
@@ -87,15 +85,27 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex  text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
-              <a href="#">
+              <a
+                href="https://github.com/nhanpoet"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaGithub />
               </a>
 
-              <a href="#">
+              <a
+                href="https://www.facebook.com/nhan.nguyentrung.7161"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaFacebook />
               </a>
 
-              <a href="#">
+              <a
+                href="https://www.instagram.com/ntn207_202/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaInstagram />
               </a>
             </motion.div>

@@ -9,13 +9,15 @@ import { motion } from "framer-motion";
 
 import { fadeIn } from "../variants.js";
 
+import { Link } from "react-scroll";
+
 const About = () => {
   const [ref, inView] = useInView({
     threshold: 0.5,
   });
 
   return (
-    <div className="section mt-[50px]" id="about" ref={ref}>
+    <div className="section mt-[150px]" id="about" ref={ref}>
       <div className="container mx-auto ">
         <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen">
           {/* img  */}
@@ -74,7 +76,10 @@ const About = () => {
               </div>
             </div>
             <div className="flex gap-x-5 items-center">
-              <button className="btn btn-lg">Contact me</button>
+              <Link to="contact" activeClass="active" smooth={true} spy={true}>
+                <button className="btn btn-lg">Contact me</button>
+              </Link>
+
               <a href="#" className="text-gradient btn-link">
                 My portfolio
               </a>
