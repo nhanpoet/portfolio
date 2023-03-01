@@ -4,7 +4,7 @@ import { fadeIn } from "../variants.js";
 
 const Contact = () => {
   return (
-    <section className="py-16 my-[50px] lg:section" id="contact">
+    <section className="py-16 mt-[200px]  lg:section" id="contact">
       <div className="container  mx-auto">
         <div className="flex flex-col lg:flex-row">
           <motion.div

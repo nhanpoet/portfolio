@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
-import Image from "../assets/avatar.svg";
+import Image from "../assets/57372-removebg-preview.png";
 
 import { FaGithub, FaFacebook, FaInstagram } from "react-icons/fa";
 
