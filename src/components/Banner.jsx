@@ -56,9 +56,9 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-4 max-w-lg mx-auto lg:mx-0 "
             >
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s.
+              I want to work in a professional programming environment, where I
+              can develop my professional skills, learn new programming
+              knowledge to successfully complete the assigned work.
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.7)}

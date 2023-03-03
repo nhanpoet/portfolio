@@ -5,6 +5,12 @@ import CountUp from "react-countup";
 
 import { useInView } from "react-intersection-observer";
 
+import { HiOutlineMail } from "react-icons/hi";
+
+import { AiOutlinePhone, AiOutlineHome } from "react-icons/ai";
+
+import { BsCalendarDate } from "react-icons/bs";
+
 import { motion } from "framer-motion";
 
 import { fadeIn } from "../variants.js";
@@ -37,17 +43,29 @@ const About = () => {
             className="flex-1 "
           >
             <h2 className="h2 text-accent">About me.</h2>
-            <h3 className="h3 mb-4">I'm a Fresher FullStack</h3>
-            <p className="mb-6">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
+            <h3 className="h3 mb-4">I'm NGUYỄN TRUNG NHÂN</h3>
+            <div className="mb-2 flex flex-row items-center ">
+              <HiOutlineMail className="w-[25px] h-[25px]" />
+              <p className="ml-3">trungnhan12a2@gmail.com</p>
+            </div>
+            <div className="mb-2 flex flex-row items-center">
+              <AiOutlinePhone className="w-[25px] h-[25px]" />
+              <p className="ml-3">0353179247</p>
+            </div>
+            <div className="mb-2 flex flex-row items-center">
+              <BsCalendarDate className="w-[25px] h-[25px]" />
+              <p className="ml-3">20/07/2002</p>
+            </div>
+            <div className="mb-6 flex flex-row items-center ">
+              <AiOutlineHome className="w-[25px] h-[25px]" />
+              <p className="ml-3">
+                12/11 road 109, ward Phuoc Long B, District 9, HCM city
+              </p>
+            </div>
             <div className="flex gap-x-6 lg:gap-x-5 mb-12">
               <div>
                 <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={5} duration={3} /> : null}
+                  {inView ? <CountUp start={0} end={0} duration={3} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
                   Years of <br />
@@ -57,11 +75,10 @@ const About = () => {
 
               <div>
                 <div className="text-[40px] font-tertiary text-gradient mb-2">
-                  {inView ? <CountUp start={0} end={15} duration={3} /> : null}
+                  {inView ? <CountUp start={0} end={5} duration={3} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
-                  Projects <br />
-                  Completed
+                  Projects <br /> ReactJS
                 </div>
               </div>
 
@@ -70,8 +87,8 @@ const About = () => {
                   {inView ? <CountUp start={0} end={10} duration={3} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
-                  Satisfied <br />
-                  Clients
+                  All <br />
+                  Projects
                 </div>
               </div>
             </div>

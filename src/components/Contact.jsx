@@ -2,10 +2,17 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants.js";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const ref = useRef();
   const [success, setSuccess] = useState(null);
+
+  const notify = () =>
+    toast.success(
+      "Your message has been sent. We'll get back to you soon :)))"
+    );
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -82,11 +89,24 @@ const Contact = () => {
               name="message"
             ></textarea>
 
-            <button className="btn btn-lg" type="submit">
+            <button className="btn btn-lg" type="submit" onClick={notify}>
               Send message
             </button>
-            {success &&
-              "Your message has been sent. We'll get back to you soon :)))"}
+
+            {success && (
+              <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="dark"
+              />
+            )}
           </motion.form>
         </div>
       </div>

@@ -22,13 +22,11 @@ const Work = () => {
             <div className="">
               <h2 className="h2 leading-tight text-accent">
                 My Latest <br />
-                Work.
+                Projects.
               </h2>
-              <p className="max-w-sm mb-4">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
+              <p className="max-w-sm mb-10">
+                Here are the projects that I worked on during my school time,
+                completed in popular languages ​​these days.
               </p>
 
               <button className="btn btn-sm">
@@ -42,93 +40,114 @@ const Work = () => {
               </button>
             </div>
 
-            <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
-              <div
-                className="group-hover:bg-black/70 w-full h-full absolute z-40
+            <a
+              href="https://github.com/nhanpoet/ui-travel-master"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+                <div
+                  className="group-hover:bg-black/70 w-full h-full absolute z-40
               transition-all duration-300 cursor-pointer"
-              ></div>
+                ></div>
 
-              <img
-                className="group-hover:scale-125 transition-all duration-500"
-                src={Img1}
-                alt=""
-              />
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={Img1}
+                  alt=""
+                />
 
-              <div
-                className="absolute -bottom-full left-12 group-hover:bottom-24 
+                <div
+                  className="absolute -bottom-full left-12 group-hover:bottom-24 
               transition-all duration-500 z-50"
-              >
-                <span className="text-gradient">UI/UX Design</span>
-              </div>
+                >
+                  <span className="text-gradient">
+                    ReactJS | Spring Boot | MySQL
+                  </span>
+                </div>
 
-              <div
-                className="absolute -bottom-full left-12 group-hover:bottom-14 
+                <div
+                  className="absolute -bottom-full left-12 group-hover:bottom-14 
               transition-all duration-500 z-50"
-              >
-                <span className="text-3xl text-white">Project Title</span>
+                >
+                  <span className="text-3xl text-white">Travel Master</span>
+                </div>
               </div>
-            </div>
+            </a>
           </motion.div>
           <motion.div
             variants={fadeIn("left", 0.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 flex flex-col gap-y-14"
+            className="flex-1 flex flex-col gap-y-4"
           >
-            <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
-              <div
-                className="group-hover:bg-black/70 w-full h-full absolute z-40
+            <a
+              href="https://github.com/nhanpoet/eye-onic"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+                <div
+                  className="group-hover:bg-black/70 w-full h-full absolute z-40
               transition-all duration-300 cursor-pointer"
-              ></div>
+                ></div>
 
-              <img
-                className="group-hover:scale-125 transition-all duration-500"
-                src={Img3}
-                alt=""
-              />
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={Img3}
+                  alt=""
+                />
 
-              <div
-                className="absolute -bottom-full left-12 group-hover:bottom-24 
+                <div
+                  className="absolute -bottom-full left-12 group-hover:bottom-24 
               transition-all duration-500 z-50"
-              >
-                <span className="text-gradient">UI/UX Design</span>
-              </div>
+                >
+                  <span className="text-gradient">PHP | MySQL</span>
+                </div>
 
-              <div
-                className="absolute -bottom-full left-12 group-hover:bottom-14 
+                <div
+                  className="absolute -bottom-full left-12 group-hover:bottom-14 
               transition-all duration-500 z-50"
-              >
-                <span className="text-3xl text-white">Project Title</span>
+                >
+                  <span className="text-3xl text-white">Eye-Onic</span>
+                </div>
               </div>
-            </div>
-
-            <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
-              <div
-                className="group-hover:bg-black/70 w-full h-full absolute z-40
+            </a>
+            <a
+              href="https://github.com/nhanpoet/social-media-clone"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+                <div
+                  className="group-hover:bg-black/70 w-full h-full absolute z-40
               transition-all duration-300 cursor-pointer"
-              ></div>
+                ></div>
 
-              <img
-                className="group-hover:scale-125 transition-all duration-500"
-                src={Img2}
-                alt=""
-              />
+                <img
+                  className="group-hover:scale-125 transition-all duration-500"
+                  src={Img2}
+                  alt=""
+                />
 
-              <div
-                className="absolute -bottom-full left-12 group-hover:bottom-24 
+                <div
+                  className="absolute -bottom-full left-12 group-hover:bottom-24 
               transition-all duration-500 z-50"
-              >
-                <span className="text-gradient">UI/UX Design</span>
-              </div>
+                >
+                  <span className="text-gradient">
+                    ReactJS | MySQL | NodeJS
+                  </span>
+                </div>
 
-              <div
-                className="absolute -bottom-full left-12 group-hover:bottom-14 
+                <div
+                  className="absolute -bottom-full left-12 group-hover:bottom-14 
               transition-all duration-500 z-50"
-              >
-                <span className="text-3xl text-white">Project Title</span>
+                >
+                  <span className="text-3xl text-white">Social Media</span>
+                </div>
               </div>
-            </div>
+            </a>
           </motion.div>
         </div>
       </div>
