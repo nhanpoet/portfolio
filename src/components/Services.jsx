@@ -27,7 +27,7 @@ const services = [
     link: "Learn More",
   },
   {
-    name: "INTEREST",
+    name: "Interest",
     description: "- Reading: Read an average of 1 book per month",
     des1: "- Sports: Swimming, soccer,...",
     des2: "- Listen to music and play games",
@@ -49,7 +49,7 @@ const Services = () => {
             className="flex-1 lg:bg-services lg:bg-top  bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
           >
             <h2 className="h2 text-accent mb-6">Education and skills .</h2>
-            <h3 className="h3 max-w-[455px] mb-10">I'm Fresher</h3>
+            <h3 className="h3 max-w-[455px] mb-10">I'm Intern</h3>
             <Link to="work" activeClass="active" smooth={true} spy={true}>
               <button className="btn btn-sm">See me work</button>
             </Link>

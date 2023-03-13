@@ -42,7 +42,7 @@ const Banner = () => {
             >
               <span className="text-white mr-4">I am a</span>
               <TypeAnimation
-                sequence={["Developer", 2000, 2000, "Fresher", 2000]}
+                sequence={["Developer", 2000, "Intern", 2000]}
                 speed={500}
                 className="text-accent"
                 wrapper="span"
