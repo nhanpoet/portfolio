@@ -71,7 +71,11 @@ const Banner = () => {
                 <button className="btn btn-lg">Contact me</button>
               </Link>
 
-              <a href="#" className="text-gradient btn-link">
+              <a
+                href="https://drive.google.com/file/d/1yKgVlumtXwsRsB-S1zxKS-RQqF2UG32i/view?usp=drive_link"
+                className="text-gradient btn-link"
+                download
+              >
                 My Portfolio
               </a>
             </motion.div>
@@ -112,14 +116,24 @@ const Banner = () => {
           </div>
 
           {/* image */}
-          <div className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[480px] ">
+          <div className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[480px] mb-8 ">
             <motion.img
-              variants={fadeIn("down", 0.5)}
+              // variants={fadeIn("down", 0.5)}
+              variants={{
+                ...fadeIn("down", 0.5),
+                hidden: { opacity: 0, rotateY: 90 },
+                show: { opacity: 1, rotateY: 0 },
+              }}
               initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              animate="show"
+              transition={{
+                duration: 1,
+                repeat: Infinity, // Lặp vô tận
+                repeatType: "reverse", // Đảo ngược trạng thái khi lặp
+              }}
               src={Image}
               alt=""
+              viewport={{ once: false, amount: 0.7 }}
             />
           </div>
         </div>
