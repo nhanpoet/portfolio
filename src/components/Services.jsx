@@ -13,7 +13,7 @@ const services = [
     name: "Education",
     icon: <TbSchool className="w-[25px] h-[25px] mr-3" />,
     description: "Aptech Computer Education, 09/2020 - 04/2023",
-    des1: "- Major: Software Programming",
+    des1: "- Major: Software Engineer",
     des2: "- Currently: Graduated",
     link: "Learn More",
   },

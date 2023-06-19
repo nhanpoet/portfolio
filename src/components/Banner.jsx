@@ -72,7 +72,7 @@ const Banner = () => {
               </Link>
 
               <a
-                href="https://drive.google.com/file/d/1yKgVlumtXwsRsB-S1zxKS-RQqF2UG32i/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1p1xUITTcDT2HOhTmTbQRZ_Aq0duBLnlL/view?usp=sharing"
                 className="text-gradient btn-link"
                 download
               >
