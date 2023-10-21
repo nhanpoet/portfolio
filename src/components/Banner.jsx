@@ -116,7 +116,7 @@ const Banner = () => {
           </div>
 
           {/* image */}
-          <div className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[480px] mb-8 ">
+          <div className="hidden lg:flex flex-1 max-w-[360px] lg:max-w-[520px] mb-8 ">
             <motion.img
               variants={fadeIn("down", 0.5)}
               initial="hidden"
