@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
-import Image from "../assets/57372-removebg-preview.png";
+import Image from "../assets/banner.png";
 
 import { FaGithub, FaFacebook, FaInstagram } from "react-icons/fa";
 
@@ -42,7 +42,7 @@ const Banner = () => {
             >
               <span className="text-white mr-4">I am a</span>
               <TypeAnimation
-                sequence={["Developer", 2000, "Intern", 2000]}
+                sequence={["Mobile Dev", 2000, "Intern", 2000]}
                 speed={500}
                 className="text-accent"
                 wrapper="span"
@@ -54,7 +54,7 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="mb-4 max-w-lg mx-auto lg:mx-0 "
+              className="mb-4 max-w-xl mx-auto lg:mx-0 "
             >
               I want to work in a professional programming environment, where I
               can develop my professional skills, learn new programming
@@ -72,9 +72,9 @@ const Banner = () => {
               </Link>
 
               <a
-                href="https://drive.google.com/file/d/1p1xUITTcDT2HOhTmTbQRZ_Aq0duBLnlL/view?usp=sharing"
+                href="https://drive.google.com/file/d/1dC33FcvSmBL53TbMSvXuMg7-EHjAyyao/view?usp=sharing"
                 className="text-gradient btn-link"
-                download
+                download="cv-apply.pdf"
               >
                 My Portfolio
               </a>
@@ -118,22 +118,11 @@ const Banner = () => {
           {/* image */}
           <div className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[480px] mb-8 ">
             <motion.img
-              // variants={fadeIn("down", 0.5)}
-              variants={{
-                ...fadeIn("down", 0.5),
-                hidden: { opacity: 0, rotateY: 90 },
-                show: { opacity: 1, rotateY: 0 },
-              }}
+              variants={fadeIn("down", 0.5)}
               initial="hidden"
-              animate="show"
-              transition={{
-                duration: 1,
-                repeat: Infinity, // Lặp vô tận
-                repeatType: "reverse", // Đảo ngược trạng thái khi lặp
-              }}
-              src={Image}
-              alt=""
+              whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
+              src={Image}
             />
           </div>
         </div>

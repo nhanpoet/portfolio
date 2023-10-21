@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'CustomFont';
+  src: url('/src/Mona-Sans.woff') format('woff');
+  /* Các thuộc tính font tùy chỉnh khác ở đây */
+}
+*{
+  font-family: 'CustomFont', sans-serif;}
+
 .btn {
   background: linear-gradient(
     92.23deg,
